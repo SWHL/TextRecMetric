@@ -1,8 +1,6 @@
 # -*- encoding: utf-8 -*-
 # @Author: SWHL
 # @Contact: liekkaskono@163.com
-from pathlib import Path
-
 import cv2
 import numpy as np
 from datasets import load_dataset
