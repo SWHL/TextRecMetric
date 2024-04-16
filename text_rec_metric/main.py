@@ -15,7 +15,10 @@ class TextRecMetric:
         self.ignore_space = ignore_space
         self.eps = 1e-15
 
-    def __call__(self, pred_txt_path: Union[str, Path]):
+    def __call__(self, pred_txt_path: Union[str, Path, None] = None):
+        if pred_txt_path is None:
+            raise ValueError("pred_txt_path can not be None.")
+
         data = read_txt(pred_txt_path)
         preds, gts, elapses = [], [], []
         for v in data:
