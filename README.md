@@ -25,7 +25,6 @@ flowchart LR
 A([Text Recognition Algorithm]) --get_pred_txt.py--> B([pred_txt])
 B --compute_metric.py--> C([TextRecMetric]) --> D([ExactMatch])
 C --> E([CharMatch])
-C --> F([H-mean])
 ```
 
 ### 指定数据集上评测
