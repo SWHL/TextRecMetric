@@ -9,8 +9,6 @@ from datasets import load_dataset
 from rapidocr_onnxruntime import RapidOCR
 from tqdm import tqdm
 
-root_dir = Path(__file__).resolve().parent
-
 engine = RapidOCR()
 
 dataset = load_dataset("SWHL/text_rec_test_dataset")
